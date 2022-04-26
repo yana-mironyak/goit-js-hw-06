@@ -15,7 +15,6 @@ const elements = ingredients.map(ingredient => {
   return itemEl;
 });
 
-// console.log(elements);
 
 const listEl = document.createElement('ul');
 listEl.classList.add('ingredients');

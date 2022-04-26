@@ -6,7 +6,10 @@ const refs = {
 refs.input.addEventListener('input', onImputChange);
 
 function onImputChange(event) {
-    console.log(event.currentTarget.value);
+    if (event.currentTarget.value === '') {
+       refs.nameOutput.textContent = 'Anonymous'
+    } else { 
     refs.nameOutput.textContent = event.currentTarget.value;
+}
 };
 

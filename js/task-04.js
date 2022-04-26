@@ -17,12 +17,10 @@ const refs = {
 refs.decrementBtn.addEventListener('click', function () {
     counter.decrement();
     refs.valueEl.textContent = counter.value;
-    console.log(counter);
 });
 
 
 refs.incrementBtn.addEventListener('click', function () {
     counter.increment();
     refs.valueEl.textContent = counter.value;
-    console.log(counter);
 });

@@ -21,7 +21,6 @@ const images = [
   
 //   return itemEl;
 // }); 
-// console.log(elements);
 
 // const listEl = document.querySelector('.gallery');
 // listEl.append(...elements);
@@ -29,12 +28,9 @@ const images = [
 // -----------------Second Variant-----------------------
 
 const listEl = document.querySelector('.gallery');
-console.log(listEl);
 
 const imagesEl = images.map(image =>
  `<li><img src='${image.url}' alt='${image.alt}' width=250 height=150></li>`);
-
-// console.log(imagesEl);
 
 listEl.insertAdjacentHTML('beforeend', imagesEl.join(""));
 
