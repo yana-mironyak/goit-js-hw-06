@@ -16,7 +16,8 @@ const elements = ingredients.map(ingredient => {
 });
 
 
-const listEl = document.createElement('ul');
+
+const listEl = document.querySelector('ul');
 listEl.classList.add('ingredients');
 console.log(listEl);
 listEl.append(...elements);
